@@ -6,8 +6,8 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 SRC_URI = "git://github.com/open-telemetry/opentelemetry-cpp.git;protocol=https;branch=main"
 
-SRCREV = "52309ddc65e74e7309c7224cacf3cfb04730b2be"
-PV = "1.0+git${SRCPV}"
+SRCREV = "a799f4aed9c94b765dcdaabaeab7d5e7e2310878"
+PV = "1.14.2+git${SRCPV}"
 
 S = "${WORKDIR}/git"
 
