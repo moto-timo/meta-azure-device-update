@@ -10,7 +10,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 SRC_URI = "git://github.com/Azure/azure-sdk-for-cpp.git;protocol=https;branch=main"
 
-SRCREV = "f757bb06e71adb829edcaf2867abc4e87c5aa23f"
+SRCREV = "46fe50212ca293e709a7235941ee1f4c24433c07"
 SRC_URI += "file://0001-Fixup-compiler-warning.patch"
 PV = "1.0+git${SRCPV}"
 
