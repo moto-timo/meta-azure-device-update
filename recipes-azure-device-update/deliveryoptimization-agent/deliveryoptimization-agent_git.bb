@@ -12,16 +12,16 @@ DO_GIT_BRANCH ?= "develop"
 DO_SRC_URI ?= "git://github.com/microsoft/do-client"
 SRC_URI = "${DO_SRC_URI};protocol=https;branch=${DO_GIT_BRANCH}"
 
-DO_GIT_COMMIT ?= "98919b269e375f2ee317f0f1d91e655b91800a04"
+DO_GIT_COMMIT ?= "8362e36bb990914bb3f69a08f50f383612983002"
 SRCREV = "${DO_GIT_COMMIT}"
 
 PV = "1.0+git${SRCPV}"
-S = "${WORKDIR}/git" 
+S = "${WORKDIR}/git"
 
 
 DEPENDS = "boost curl libproxy msft-gsl"
 
-inherit cmake
+inherit cmake pkgconfig
 
 BUILD_TYPE ?= "Debug"
 EXTRA_OECMAKE += "-DCMAKE_BUILD_TYPE=${BUILD_TYPE}"
